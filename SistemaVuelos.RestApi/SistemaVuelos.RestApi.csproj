@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaVuelos.BLL\SistemaVuelos.BLL.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.Entity\SistemaVuelos.Entity.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.IOC\SistemaVuelos.IOC.csproj" />
+  </ItemGroup>
+
+</Project>
