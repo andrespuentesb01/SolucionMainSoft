@@ -1,11 +1,11 @@
-﻿using SistemaVuelos.DAL.DTONewShore;
+﻿using SlnPactia.DAL.DTONewShore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaVuelos.BLL.Services
+namespace SlnPactia.BLL.Services
 {
     internal class FlightService
     {

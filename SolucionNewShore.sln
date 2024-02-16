@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVuelos.Entity", "SistemaVuelos.Entity\SistemaVuelos.Entity.csproj", "{7CE9C5D0-4108-4212-8CD2-E1457D331CE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Domain", "SistemaVuelos.Entity\SlnPactia.Domain.csproj", "{7CE9C5D0-4108-4212-8CD2-E1457D331CE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVuelos.DAL", "SistemaVuelos.DAL\SistemaVuelos.DAL.csproj", "{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Infraestructure", "SistemaVuelos.DAL\SlnPactia.Infraestructure.csproj", "{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVuelos.BLL", "SistemaVuelos.BLL\SistemaVuelos.BLL.csproj", "{0EE7B422-A2BE-4E60-ABC0-3B98CEE754A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.IOC", "SistemaVuelos.IOC\SlnPactia.IOC.csproj", "{90BA4303-9A52-4F83-9B23-EF483BE91B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVuelos.IOC", "SistemaVuelos.IOC\SistemaVuelos.IOC.csproj", "{90BA4303-9A52-4F83-9B23-EF483BE91B78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Api", "SistemaVuelo.Api\SlnPactia.Api.csproj", "{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVuelo.Api", "SistemaVuelo.Api\SistemaVuelo.Api.csproj", "{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Aplication", "ClassLibrary1\SlnPactia.Aplication.csproj", "{33D072D1-56C1-4141-811D-19F7FAB2A910}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EE7B422-A2BE-4E60-ABC0-3B98CEE754A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EE7B422-A2BE-4E60-ABC0-3B98CEE754A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EE7B422-A2BE-4E60-ABC0-3B98CEE754A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EE7B422-A2BE-4E60-ABC0-3B98CEE754A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90BA4303-9A52-4F83-9B23-EF483BE91B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90BA4303-9A52-4F83-9B23-EF483BE91B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90BA4303-9A52-4F83-9B23-EF483BE91B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

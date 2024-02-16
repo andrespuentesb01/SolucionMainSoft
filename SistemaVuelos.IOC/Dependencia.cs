@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
 using Microsoft.Extensions.DependencyInjection;
-using SistemaVuelos.DAL.DbContext;
+using SlnPactia.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
-//using SistemaVuelos.DAL.interfaces;
-//using SistemaVuelos.DAL.Implementacion;
-//using SistemaVuelos.BLL.interfaces;
-//using SistemaVuelos.Bll.interfaces;
+//using SlnPactia.DAL.interfaces;
+//using SlnPactia.DAL.Implementacion;
+//using SlnPactia.BLL.interfaces;
+//using SlnPactia.Bll.interfaces;
 
-namespace SistemaVuelos.IOC
+namespace SlnPactia.IOC
 {
     public static class Dependencia
     {
         public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DbNewShoreContext>(options =>
+            services.AddDbContext<DbPactiaContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
             });

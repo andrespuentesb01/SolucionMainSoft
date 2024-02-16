@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="SolucionNewShore\.vs\VSWorkspaceState.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaVuelos.DAL\SlnPactia.DAL.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.Entity\SlnPactia.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implementacion\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="SolucionNewShore\.git\objects\info\" />
+    <Folder Include="SolucionNewShore\.git\refs\tags\" />
+    <Folder Include="SolucionNewShore\.vs\sd\" />
+    <Folder Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\merges\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="SolucionNewShore\.git\config" />
+    <None Include="SolucionNewShore\.git\description" />
+    <None Include="SolucionNewShore\.git\HEAD" />
+    <None Include="SolucionNewShore\.git\hooks\applypatch-msg.sample" />
+    <None Include="SolucionNewShore\.git\hooks\commit-msg.sample" />
+    <None Include="SolucionNewShore\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="SolucionNewShore\.git\hooks\post-update.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-applypatch.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-commit.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-merge-commit.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-push.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-rebase.sample" />
+    <None Include="SolucionNewShore\.git\hooks\pre-receive.sample" />
+    <None Include="SolucionNewShore\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="SolucionNewShore\.git\hooks\push-to-checkout.sample" />
+    <None Include="SolucionNewShore\.git\hooks\update.sample" />
+    <None Include="SolucionNewShore\.git\index" />
+    <None Include="SolucionNewShore\.git\info\exclude" />
+    <None Include="SolucionNewShore\.git\logs\HEAD" />
+    <None Include="SolucionNewShore\.git\logs\refs\heads\master" />
+    <None Include="SolucionNewShore\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="SolucionNewShore\.git\objects\pack\pack-6879bbc4c348715e972149ca5285b176cb59dbf2.idx" />
+    <None Include="SolucionNewShore\.git\objects\pack\pack-6879bbc4c348715e972149ca5285b176cb59dbf2.pack" />
+    <None Include="SolucionNewShore\.git\packed-refs" />
+    <None Include="SolucionNewShore\.git\refs\heads\master" />
+    <None Include="SolucionNewShore\.git\refs\remotes\origin\HEAD" />
+    <None Include="SolucionNewShore\.vs\ProjectEvaluation\solucionnewshore.metadata.v7.bin" />
+    <None Include="SolucionNewShore\.vs\ProjectEvaluation\solucionnewshore.projects.v7.bin" />
+    <None Include="SolucionNewShore\.vs\slnx.sqlite" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\config\applicationhost.config" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\0b255570-16ac-40ad-a687-0393f8f9215f.vsidx" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\1f7dbd6d-e0d4-4439-a3d6-634639c6337c.vsidx" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\6e832f47-423a-4dd7-9934-a321cfbd0460.vsidx" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\845186a8-6e7a-404d-90a5-0a9f4f75561c.vsidx" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\FileContentIndex\read.lock" />
+    <None Include="SolucionNewShore\.vs\SolucionNewShore\v17\.futdcache.v2" />
+    <None Include="SolucionNewShore\SistemaVuelo.Api\SistemaVuelo.Api.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.Api\SistemaVuelos.Api.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.BLL\SistemaVuelos.BLL.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.DAL\SistemaVuelos.DAL.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.Entity\SistemaVuelos.Entity.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.IOC\SistemaVuelos.IOC.csproj" />
+    <None Include="SolucionNewShore\SistemaVuelos.RestApi\SistemaVuelos.RestApi.csproj" />
+    <None Include="SolucionNewShore\SolucionNewShore.sln" />
+  </ItemGroup>
+
+</Project>

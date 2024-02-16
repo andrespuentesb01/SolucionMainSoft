@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\SlnPactia.Aplication.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.DAL\SlnPactia.Infraestructure.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.Entity\SlnPactia.Domain.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.IOC\SlnPactia.IOC.csproj" />
+  </ItemGroup>
+
+</Project>
