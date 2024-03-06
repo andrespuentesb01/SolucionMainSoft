@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SistemaVuelos.DAL\SlnPactia.Infraestructure.csproj" />
-    <ProjectReference Include="..\SistemaVuelos.Entity\SlnPactia.Domain.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.DAL\SlnMain.Infraestructure.csproj" />
   </ItemGroup>
 
 </Project>

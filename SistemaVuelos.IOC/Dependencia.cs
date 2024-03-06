@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
 using Microsoft.Extensions.DependencyInjection;
-using SlnPactia.Infrastructure.DbContext;
-using Microsoft.EntityFrameworkCore;
-//using SlnPactia.DAL.interfaces;
-//using SlnPactia.DAL.Implementacion;
-//using SlnPactia.BLL.interfaces;
-//using SlnPactia.Bll.interfaces;
 
-namespace SlnPactia.IOC
+using Microsoft.EntityFrameworkCore;
+using SlnMain.Infrastructure;
+//using SlnMain.DAL.interfaces;
+//using SlnMain.DAL.Implementacion;
+//using SlnMain.BLL.interfaces;
+//using SlnMain.Bll.interfaces;
+
+namespace SlnMain.IOC
 {
     public static class Dependencia
     {
         public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DbPactiaContext>(options =>
+            services.AddDbContext<DbRentCarContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
             });

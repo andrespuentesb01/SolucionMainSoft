@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SlnPactia.Domain.Models
+namespace SlnMain.Domain.Models
 {
     public class Usuario
     {

@@ -2,19 +2,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using SlnPactia.Infrastructure.DbContext;
 using System;
 using System.Collections.Generic;
 using Azure;
-using SlnPactia.Domain;
+using SlnMain.Domain;
 using System.Text;
-using SlnPactia.Domain.Models;
+using SlnMain.Domain.Models;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
-using SlnPactia.Aplication.Repository;
+using SlnMain.Aplication.Repository;
 
-namespace SlnPactia.Api.Controllers
+namespace SlnMain.Api.Controllers
 {
 
  
@@ -23,8 +22,8 @@ namespace SlnPactia.Api.Controllers
         public class AuthController : ControllerBase
         {
 
-        ListOfTaskRepository listOfTaskRepository;
-        private readonly DbPactiaContext _dbcontext;
+
+
         private readonly string secretKey;
 
 
@@ -56,7 +55,7 @@ namespace SlnPactia.Api.Controllers
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenConfig = tokenHandler.CreateToken(tokenDescriptor);
                 string tokenCreato = tokenHandler.WriteToken(tokenConfig);
-                return StatusCode(StatusCodes.Status200OK, new { toke = tokenCreato });
+                return StatusCode(StatusCodes.Status200OK, new { token = tokenCreato });
             }
 
             return StatusCode(StatusCodes.Status401Unauthorized, new { token = "" });

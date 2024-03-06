@@ -1,4 +1,4 @@
-using SlnPactia.IOC;
+using SlnMain.IOC;
 using System.Net;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Domain", "SistemaVuelos.Entity\SlnPactia.Domain.csproj", "{7CE9C5D0-4108-4212-8CD2-E1457D331CE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Domain", "SistemaVuelos.Entity\SlnMain.Domain.csproj", "{7CE9C5D0-4108-4212-8CD2-E1457D331CE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Infraestructure", "SistemaVuelos.DAL\SlnPactia.Infraestructure.csproj", "{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Infraestructure", "SistemaVuelos.DAL\SlnMain.Infraestructure.csproj", "{FE56A9B5-759B-46D0-AD64-DFD1EC67FD3B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.IOC", "SistemaVuelos.IOC\SlnPactia.IOC.csproj", "{90BA4303-9A52-4F83-9B23-EF483BE91B78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.IOC", "SistemaVuelos.IOC\SlnMain.IOC.csproj", "{90BA4303-9A52-4F83-9B23-EF483BE91B78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Api", "SistemaVuelo.Api\SlnPactia.Api.csproj", "{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Api", "SistemaVuelo.Api\SlnMain.Api.csproj", "{EDBE4682-CF3B-4B8D-B88C-9E53FF418D77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnPactia.Aplication", "ClassLibrary1\SlnPactia.Aplication.csproj", "{33D072D1-56C1-4141-811D-19F7FAB2A910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Aplication", "ClassLibrary1\SlnMain.Aplication.csproj", "{33D072D1-56C1-4141-811D-19F7FAB2A910}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

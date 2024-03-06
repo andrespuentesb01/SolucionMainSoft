@@ -14,10 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\SlnPactia.Aplication.csproj" />
-    <ProjectReference Include="..\SistemaVuelos.DAL\SlnPactia.Infraestructure.csproj" />
-    <ProjectReference Include="..\SistemaVuelos.Entity\SlnPactia.Domain.csproj" />
-    <ProjectReference Include="..\SistemaVuelos.IOC\SlnPactia.IOC.csproj" />
+    <ProjectReference Include="..\ClassLibrary1\SlnMain.Aplication.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.DAL\SlnMain.Infraestructure.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.Entity\SlnMain.Domain.csproj" />
+    <ProjectReference Include="..\SistemaVuelos.IOC\SlnMain.IOC.csproj" />
   </ItemGroup>
 
 </Project>

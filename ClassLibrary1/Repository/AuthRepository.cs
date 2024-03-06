@@ -1,16 +1,15 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using SlnPactia.Infrastructure.DbContext;
-using SlnPactia.Domain;
+using SlnMain.Domain;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using Azure.Core;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using SlnPactia.Domain.Models;
+using SlnMain.Domain.Models;
 
-namespace SlnPactia.Aplication.Repository
+namespace SlnMain.Aplication.Repository
 {
     public class AuthRepository
     {
