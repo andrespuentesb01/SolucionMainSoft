@@ -34,7 +34,7 @@ namespace SlnMain.Api.Controllers
 
         public AuthController(IConfiguration config, IConfiguration _configuration, IUserService userService)
         {
-           
+      
             secretKey = config.GetSection("settings").GetSection("secreteky").ToString();
             _userService = userService;
             configuration = _configuration;
