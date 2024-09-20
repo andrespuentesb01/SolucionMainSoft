@@ -11,7 +11,10 @@ using SlnMain.Domain.Models;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
-using SlnMain.Aplication.Repository;
+
+using SlnMain.Infrastructure;
+using Microsoft.Extensions.Configuration;
+using SlnMain.Aplication.Services;
 
 namespace SlnMain.Api.Controllers
 {
@@ -22,48 +25,38 @@ namespace SlnMain.Api.Controllers
         public class AuthController : ControllerBase
         {
 
-
-
         private readonly string secretKey;
+        private readonly IUserService _userService;
+        private readonly IConfiguration configuration;
+        static readonly HttpClient client = new HttpClient();
 
+        UserService userRepository;
 
-        public AuthController(IConfiguration config)
+        public AuthController(IConfiguration config, IConfiguration _configuration, IUserService userService)
         {
            
             secretKey = config.GetSection("settings").GetSection("secreteky").ToString();
-        }
-  
-        static readonly HttpClient client = new HttpClient();
+            _userService = userService;
+            configuration = _configuration;
+
+        }      
 
         [HttpPost("validate")]
-        public IActionResult validate([FromBody] Usuario request)
+        public IActionResult validate([FromBody] UsuarioDto request)
         {
             //Create a task automatically assigning it to status PENDIENTE
-            if (request.mail == "AP@GMAIL.COM" && request.password == "123")
+          
+            string tokenCreated = _userService.validateUser(request);
+           
+            if (tokenCreated != null)
             {
-                var keyBytes = Encoding.ASCII.GetBytes(secretKey);
-                var claims = new ClaimsIdentity();
-                claims.AddClaim(new Claim(ClaimTypes.NameIdentifier, request.mail));
-
-                var tokenDescriptor = new SecurityTokenDescriptor
-                {
-                    Subject = claims,
-                    Expires = DateTime.UtcNow.AddMinutes(5),
-                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(keyBytes), SecurityAlgorithms.HmacSha256Signature)
-                };
-
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var tokenConfig = tokenHandler.CreateToken(tokenDescriptor);
-                string tokenCreato = tokenHandler.WriteToken(tokenConfig);
-                return StatusCode(StatusCodes.Status200OK, new { token = tokenCreato });
+               
+                return StatusCode(StatusCodes.Status200OK, new { token = tokenCreated });
             }
 
             return StatusCode(StatusCodes.Status401Unauthorized, new { token = "" });
         }
 
-
-
-
-    }
+        }
 
 }

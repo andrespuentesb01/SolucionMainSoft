@@ -4,12 +4,22 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using SlnMain.Api;
+using AutoMapper;
+using SlnMain.Api.Repository.IRepository;
+using SlnMain.Api.Repository;
+using SlnMain.Aplication.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.InyectarDependencia(builder.Configuration);
+builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 //Jwt
 builder.Configuration.AddJsonFile("appsettings.json");
@@ -38,6 +48,7 @@ config.RequireHttpsMetadata = false;
 );
 builder.Services.AddControllers();
 
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 //Configuracion CORS
 builder.Services.AddCors(options =>
@@ -56,7 +67,7 @@ builder.Services.AddCors(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 

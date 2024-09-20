@@ -9,14 +9,14 @@ using System.Security.Claims;
 using System.Text;
 using SlnMain.Domain.Models;
 
-namespace SlnMain.Aplication.Repository
+namespace SlnMain.Aplication.Services
 {
-    public class AuthRepository
+    public class AuthService
     {
-        public AuthRepository()
+        public AuthService()
         {
         }
-        public string validate(Usuario request, string secretKey)
+        public string validate(UsuarioDto request, string secretKey)
         {
 
             if (request.mail == "AP@GMAIL.COM" && request.password == "123")

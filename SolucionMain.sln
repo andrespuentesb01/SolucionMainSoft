@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Api", "SistemaVuelo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SlnMain.Aplication", "ClassLibrary1\SlnMain.Aplication.csproj", "{33D072D1-56C1-4141-811D-19F7FAB2A910}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainUnitTesting", "MainUnitTesting\MainUnitTesting.csproj", "{D3A0B80C-3557-4E3A-AB7A-D10C12A4C2D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33D072D1-56C1-4141-811D-19F7FAB2A910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A0B80C-3557-4E3A-AB7A-D10C12A4C2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A0B80C-3557-4E3A-AB7A-D10C12A4C2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A0B80C-3557-4E3A-AB7A-D10C12A4C2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A0B80C-3557-4E3A-AB7A-D10C12A4C2D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,7 @@ namespace SlnMain.IOC
     {
         public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<DbRentCarContext>(options =>
+            services.AddDbContext<DbCarvajalContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
             });
