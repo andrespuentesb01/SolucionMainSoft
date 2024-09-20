@@ -21,7 +21,7 @@ namespace SlnMain.Aplication.Services
 
 
 
-        public async void UpdateProduct(string description, decimal price, int ivaPercent, int stock)
+        public void UpdateProduct(string description, decimal price, int ivaPercent, int stock)
         {
             // insert product entity framework
           
@@ -31,7 +31,7 @@ namespace SlnMain.Aplication.Services
           
         }
 
-        public async void CreateProduct( string description, decimal price, int ivaPercent, int stock)
+        public void CreateProduct( string description, decimal price, int ivaPercent, int stock)
         {
             // insert product entity framework
           

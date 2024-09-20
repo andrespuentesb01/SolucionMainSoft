@@ -32,7 +32,7 @@ namespace SlnMain.Aplication.Services
             secretKey = configuration.GetSection("settings").GetSection("secreteky").ToString();
         }
 
-        public async void CreateUser( string name, string password)
+        public void CreateUser( string name, string password)
         {
             // insert user entity framework
             string result = string.Empty;
@@ -73,7 +73,7 @@ namespace SlnMain.Aplication.Services
         }
 
 
-        public async void deleteUsers( int id)
+        public void deleteUsers( int id)
         {
 
             //Execute entity framework function
@@ -87,7 +87,7 @@ namespace SlnMain.Aplication.Services
 
         }
 
-        public async void saveChangesEncrypted(UsuarioDto usuarioDto, string result)
+        public void saveChangesEncrypted(UsuarioDto usuarioDto, string result)
         {
 
             var user = _dbcontext.Set<User>();
