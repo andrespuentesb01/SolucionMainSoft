@@ -60,7 +60,7 @@ namespace SlnMain.Api.Controllers
         }
 
         [HttpGet("getUsers")]
-        //[Authorize]
+        [Authorize]
         public async Task<ActionResult<List<User>>> getUsers()
         {
             _logger.LogInformation("obtener los usuarios");
